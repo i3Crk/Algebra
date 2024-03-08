@@ -25,7 +25,7 @@ int main() {
     int AOS = AlgebraFunctions.Quadratic.GetSymmetryAxis(a, b);
     int Vertex = AlgebraFunctions.Quadratic.GetPoint(a, b, c, AOS);
     int Discriminant = AlgebraFunctions.Quadratic.GetDiscriminant(a, b, c);
-    printf("Discriminant: %d (RSolutions: %d)\n", Discriminant, Discriminant > 0 && 2 || Discriminant < 0 && 0 || Discrminant == 0 && 1);
+    printf("Discriminant: %d (RSolutions: %d)\n", Discriminant, Discriminant > 0 && 2 || Discriminant < 0 && 0 || Discriminant == 0 && 1);
     printf("AOS: %d\n", AOS);
     printf("Vertex: (%d, %d)\n", AOS, Vertex);
 

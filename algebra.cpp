@@ -11,7 +11,7 @@ using namespace std;
         int GetPoint(int a = 1, int b = 1, int c = 1, int x = 0) {
             return (a * pow(x, 2)) + (b * x) + (c);
         };
-        int Discriminate(int a = 1, int b = 1, int c = 1) {
+        int GetDiscriminant(int a = 1, int b = 1, int c = 1) {
             return pow(b, 2) - 4 * a * c;
         };
     } Quadratic;
@@ -24,8 +24,8 @@ int main() {
 
     int AOS = AlgebraFunctions.Quadratic.GetSymmetryAxis(a, b);
     int Vertex = AlgebraFunctions.Quadratic.GetPoint(a, b, c, AOS);
-    int Discriminant = AlgebraFunctions.Quadratic.Discriminate(a, b, c);
-    printf("Discriminant: %d (RSolutions: %d)\n", Discriminant);
+    int Discriminant = AlgebraFunctions.Quadratic.GetDiscriminant(a, b, c);
+    printf("Discriminant: %d (RSolutions: %d)\n", Discriminant, Discriminant > 0 && 2 || Discriminant < 0 && 0 || Discrminant == 0 && 1);
     printf("AOS: %d\n", AOS);
     printf("Vertex: (%d, %d)\n", AOS, Vertex);
 
